@@ -3257,16 +3257,16 @@ unsigned char hdmi_is_primary;
 #define USER_SMI_SIZE         (MSM_SMI_SIZE - KERNEL_SMI_SIZE)
 #define MSM_PMEM_SMIPOOL_SIZE USER_SMI_SIZE
 
-#define MSM_ION_SF_SIZE		0x5A00000 /*90Mbytes = 0x5A00000*//*84Mbytes = 0x5400000*//*90Mbytes = 0x5A00000*//* 80 Mbytes = 0x5000000 */ /* 64MB = 0x4000000 */
+#define MSM_ION_SF_SIZE		0x4000000 /*90Mbytes = 0x5A00000*//*84Mbytes = 0x5400000*//*90Mbytes = 0x5A00000*//* 80 Mbytes = 0x5000000 */ /* 64MB = 0x4000000 */
 #define MSM_ION_CAMERA_SIZE     0x4000000 //F_PANTECH_CAMERA  MSM_PMEM_ADSP_SIZE
 #define MSM_ION_MM_FW_SIZE	0x200000 /* (2MB) */
-#define MSM_ION_MM_SIZE		0x5A00000 /*90Mbytes = 0x5A00000*//*84Mbytes = 0x5400000*//*90Mbytes = 0x5A00000*//*84Mbytes = 0x5400000*//* (54MB) =0x3600000*/
+#define MSM_ION_MM_SIZE		0x4000000 /*90Mbytes = 0x5A00000*//*84Mbytes = 0x5400000*//*90Mbytes = 0x5A00000*//*84Mbytes = 0x5400000*//* (54MB) =0x3600000*/
 #define MSM_ION_MFC_SIZE	SZ_8K
-#ifdef CONFIG_FB_MSM_OVERLAY1_WRITEBACK
-#define MSM_ION_WB_SIZE		0xC00000 /* 12MB */
-#else
+//#ifdef CONFIG_FB_MSM_OVERLAY1_WRITEBACK
+//#define MSM_ION_WB_SIZE		0xC00000 /* 12MB */
+//#else
 #define MSM_ION_WB_SIZE		0x700000 /* 7MB */ //0x600000 /* 6MB */
-#endif
+//#endif
 
 #define MSM_ION_QSECOM_SIZE	0x600000 /* (6MB) */
 #define MSM_ION_AUDIO_SIZE	MSM_PMEM_AUDIO_SIZE
